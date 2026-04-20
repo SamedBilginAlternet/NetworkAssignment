@@ -254,8 +254,10 @@ def main():
     print(f"  {'─'*55}")
     for key, r in results.items():
         flag = " (*)" if r["timeout"] else ""
+        ei_val  = r["I'"]
+        erd_val = r["r'"]
         print(f"  {key+' — '+r['label']:<26} {r['n']:>4} {r['e']:>5} "
-              f"{r['I'']:>8} {str(r['r'''])+flag:>8}")
+              f"{ei_val:>8} {str(erd_val)+flag:>8}")
 
     print(f"\n  (*) Zaman limiti nedeniyle kismi sonuc")
     print(f"{'='*65}\n")
